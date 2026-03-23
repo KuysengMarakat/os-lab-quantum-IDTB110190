@@ -1,0 +1,8 @@
+Run 1: 62
+Run 2: 80
+Run 3: 78
+Run 4: 70
+Run 5: 78
+
+Explanation: 
+The final inventory value changes each run because multiple processes execute concurrently and access the shared file without synchronization. Due to OS process scheduling, different processes read and write the inventory at unpredictable times, causing inconsistent updates and lost writes.
